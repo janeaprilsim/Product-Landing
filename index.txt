@@ -1,0 +1,346 @@
+<html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  top 0;
+  width: 100%;
+  line-height: 50px;
+  background-color: rgb(138, 48, 48);
+  color: #f8f9fa;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nav-bar{
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 5px grey;
+}
+
+#header-img{
+  height: 100%;
+}
+
+#nav-links{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  
+}
+
+#nav-links a{
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 850px){
+  .hide-on-small{
+    display: none;
+  }
+}
+
+main{
+  padding-top: 100px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#credit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+#credit p {
+  font-weight: bold;
+  align-self: center;
+}
+
+footer hr{
+  border-color: red;
+}
+
+#features{
+  padding: 50px 0;
+  background: linear-gradient(to right, white , #d6e5ff);
+  display: flex;
+  justify-content: center;
+}
+
+.white-hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; 
+  border-color: white;
+}
+
+.content{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+#about{
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#video{
+  width: 100%;
+}
+
+#pricing{
+  padding: 50px 0;
+  background: linear-gradient(to right, white , #d6e5ff);
+  display: flex;
+  justify-content: center;
+}
+
+.price-container{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.price-card{
+  width: 180px;
+  //height: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+}
+
+.price-card-header{
+  background-color: #008CBA;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  padding: 15px 0px;
+}
+
+.price-card-content{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+.price-text{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.price-btn{
+  margin: 20px 0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;    
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.price-btn:hover{
+  background-color: #008CBA; /* Green */
+  color: white;
+}
+
+@media (max-width: 600px){
+  .price-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .price-card{
+    margin-bottom: 20px;
+  }
+}
+
+#form{
+  padding: 50px 0;
+}
+
+#email{
+  min-width: 200px;
+  padding: 5px 5px;
+  margin: 15px 0;
+}
+
+#submit{
+  font-weight: bold;
+  background-color: rgb(239, 193, 76);
+  border: none;
+  cursor: pointer;
+  padding: 10px 32px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#submit:hover{
+  background-color: rgb(255, 220, 132);
+}
+
+#page-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#page-footer ul{
+  display: flex;
+  list-style: none;
+}
+
+#page-footer ul li{
+  padding: 0 10px;
+}
+
+#page-footer a{
+  text-decoration: none;
+  color: black;
+}
+
+#page-footer span{
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #444;
+}
+</style>
+<header id="header">
+  <h1><span class='hide-on-small'>Responsive Web Design Project - </span>Build a Product Landing Page</h1>
+
+  <nav id="nav-bar">
+    <img id="header-img" src="https://www.freelogodesign.org/img/slide-logo-1.png" alt="logo image">
+    <div id="nav-links">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#about" class="nav-link">How it works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="features">
+    <div class="content">
+      <h2 style="color:#002f99;">LET US BUILD YOUR PRODUCT<br>LANDING PAGE TO HELP YOU<br><span style="color:red;">GROW YOUR BUSINESS</span></h2>
+      <hr class="white-hr">
+      <ul style="text-align:left;">
+        <li><b>Google or Facebook Ads:</b> A landing page helps you get a positive advertising ROI by focusing your visitor's attention on the specific thing or campaign you're promoting. </li><br>
+        <li><b>Email-Gated Content:</b> Landing pages are often used for lead generation, and make it easy for your business to turn visitors into leads by incentivizing them with an ebook, industry report, online course, case study, etc. </li><br>
+        <li><b>Free Trial:</b> If your business has a trial component, focus your visitor's attention on that goal by using a landing page. </li><br>
+        <li><b>Product Page:</b> Focusing your visitor's attention on a specific product is a great way to improve the chance they'll purchase it. The most successful ecommerce companies have individual landing pages for each of every one of their products.
+          </li><br>
+        <li><b>Promotion Page:</b> If you're running a Black Friday campaign, spontaneously doing "Buy One Get One Free," or giving a free year's subscription to your software, the page you host that promotion on should be a landing page - focused only on
+          that single conversion goal. </li><br>
+        <li><b>VIP Demo/Contact Us:</b> For many businesses (real estate, B2B, SaaS, hospitality and others) the "contact us" page is actually one of the most financially important pages on their website. Consider using landing page best practices to optimize
+          the Contact Us page experience.</li><br>
+      </ul>
+	  </div>
+	  </div>
+  <div id="about">
+    <div class="content">
+      <h2>HOW IT WORKS</h2>
+      <hr class="white-hr" style="border-color:#d6e5ff">
+      <iframe id="video" width="560" height="315" src="https://m.youtube.com/watch?v=baf1_xiB_No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  </div>
+	</div>
+  <div id="pricing">
+    <div class="price-container content">
+      <div class="price-card">
+        <div class="price-card-header">Facial Wash</div>
+        <div class="price-card-content">
+          <span class="price-text">885ph</span>
+          Milk Facial Wash.<br>
+          Coffee Facial Wash.<br>
+          Rosehip Facial Wash.<br>
+          Lorem Facial Wash.
+          <button class="price-btn">Select</button>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-header">Toner</div>
+        <div class="price-card-content">
+          <span class="price-text">575ph</span>
+          Strawberry Toner.<br>
+          Tea Tree Toner.<br>
+          Tomato Toner.<br>
+          Lorem Toner.
+          <button class="price-btn">Select</button>
+        </div>
+      </div>
+      <div class="price-card">
+		<div class="price-card-header">Soaps</div>
+        <div class="price-card-content">
+          <span class="price-text">370ph</span>
+          Avacado Soap.<br>
+          Beer Soap.<br>
+          Kendall Soap.<br>
+          Lorem Soap.
+          <button class="price-btn">Select</button>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-header">Facail Oil</div>
+        <div class="price-card-content">
+          <span class="price-text">450ph</span>
+          Avacodo Oil.<br>
+          CarrotSeed Oil.<br>
+          Jojoba Oil.<br>
+          Lorem Oil.
+          <button class="price-btn">Select</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form id="form" action="" target="_blank">
+    <h2>Contact Us</h2>
+    <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+    <input type="submit" id="submit" value="Get Started">
+  </form>
+</main>
+<footer>
+  <div id="page-footer">
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2021, Jane April L. Sim</span>
+  </div>
+  <div id='credit'>
+    <hr>
+    <p>written and coded by <a href="file:///C:/Users/Julian%20Sim/Downloads/index.html" target="_blank">Jane April L. Sim</a>.</p>
+  </div>
+  </footer>
+</html>
